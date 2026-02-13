@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts & Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- End of Fonts & Styles -->
+    <title>welcome to my website!</title>
+</head>
+<body>
+    <nav class="topnav" id="topnav">
+        <a class="hvr-sweep-to-top active" id="home_btn" href="index.html">Home</a> 
+        <a class="hvr-sweep-to-top" href="about.html">About</a> 
+        <div class="dropdown">
+            <button class="hvr-sweep-to-top dropbtn">
+                Projects <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="https://github.com/kayleighmonaghan/tm470_app">Eat with the Seasons <small>(Flutter)</small></a>
+                <a href="https://km-react-weather.netlify.app/">Weather App <small>(React JS)</small></a>
+                <a href="https://km-cat-organ.netlify.app/">Cat Organ <small>(vanilla JS)</small></a>
+            </div>
+        </div>
+        <a class="hvr-sweep-to-top" href="contact.html">Contact</a> 
+        <a class="hvr-sweep-to-top" href="links.html">Links</a>
+        <a href="javascript:void(0);" class="hamburger" onclick="responsiveNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
+    <div class="content">
+        <h2>About me!</h2>
+        <p>
+            My name is Kayleigh and I'm a recent BSc Computing and IT 
+            (Software) graduate based in Glasgow, Scotland. I am a 
+            passionate front-end dev with experience working with both 
+            vanilla JS, and the React and Svelte frameworks. I also have 
+            a little experience working with Flutter for cross-platform 
+            app development, and Django for web development in Python.
+            I enjoy making quirky and interesting user interfaces, 
+            and I'm always learning how to do more with CSS and JavaScript. 
+            Feel free to have a look around my site and viwe some of my projects. 
+            You can also contact me on socials or via the contact form.
+        </p>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

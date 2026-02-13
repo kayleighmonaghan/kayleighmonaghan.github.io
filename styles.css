@@ -7,7 +7,9 @@
 body {
     background-color: rgb(60, 255, 0);
 }
-
+.content {
+  z-index: 1;
+}
 /* Decorative Title */
 .bounce-text {
   color: black;
@@ -162,7 +164,7 @@ nav .active {
     writing-mode: vertical-rl;
     text-orientation: upright; /* text-orientation: mixed; */
     position: absolute;
-    top: -280px
+    top: -280px;
   }
 }
 
