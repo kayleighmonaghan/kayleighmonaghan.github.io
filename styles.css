@@ -7,13 +7,10 @@
 body {
     background-color: rgb(60, 255, 0);
 }
-.content {
-  z-index: 1;
-}
 /* Decorative Title */
 .bounce-text {
   color: black;
-  text-shadow: 5px 5px greenyellow;
+  text-shadow: 5px 5px 2px greenyellow;
   position: absolute;
   transform: translate(-50%, 50%);
   left: 50%;
@@ -24,6 +21,9 @@ body {
   font-size: 3rem;
   font-weight: bold;
   justify-content: center;
+}
+.bounce-text.about {
+  top: 20%;
 }
 .bounce-text span {
   display: inline-block;
@@ -89,6 +89,19 @@ body {
   }
 }
 
+.arrow {
+  display: none;
+}
+
+.content {
+  margin: 200px 10% 0 10%; /* top right bottom left */
+  display: flex;
+  justify-content: center;
+}
+.content p {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 500;
+}
 /* Navigation */
 nav {
     margin: 15px 20px 15px 20px; /* top right bottom left */
@@ -166,6 +179,22 @@ nav .active {
     position: absolute;
     top: -280px;
   }
+  .bounce-text.about {
+    top: -80px;
+  }
+
+  .content {
+    margin-top: 650px;
+  }
+
+  .arrow {
+    display: block;
+    margin: 600px auto; /* top right bottom left */
+    height: 100px;
+    -webkit-filter: drop-shadow( 5px 5px 2px greenyellow);
+    filter: drop-shadow( 5px 5px 2px greenyellow);
+    cursor: pointer;
+  }
 }
 
 /* The "responsive" class is added to the nav with JavaScript when the user clicks on the hamburger. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
@@ -190,4 +219,5 @@ nav .active {
     display: block;
     text-align: left;
   }
+
 }
