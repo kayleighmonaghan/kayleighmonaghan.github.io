@@ -8,3 +8,11 @@ function responsiveNav() {
   }
 }
 
+let scrollArrow = document.getElementById("scrollArrow");
+let content = document.getElementById("content");
+
+scrollArrow.addEventListener("click", scrollToContent)
+
+function scrollToContent() {
+  content.scrollIntoView();
+}
